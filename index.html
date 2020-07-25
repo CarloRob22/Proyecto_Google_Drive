@@ -13,10 +13,11 @@
     <style>
         .barra-navegacion{
             background-color: white !important;
-            border-bottom:#f5f5f5 solid 1px;
+            border-bottom:#dadce0 solid 1px;
             margin:0px !important;
             padding:8px !important;
-            font-family: 'Roboto', sans-serif;            
+            font-family: 'Roboto', sans-serif; 
+            height: 68px;           
             
         }
         .busqueda{
@@ -24,15 +25,16 @@
             color:#c2c4c5;
             border:none;            
             font-size: 16px; 
-            height: 48px; 
+            height: 50px; 
             border-radius: 0px !important;      
             margin-right: 0px!important;
             margin-left: 0px !important;
-            width: 83% !important;    
+            width: 419px;
         }
         .btn-busqueda{
             background-color: #f1f3f4;
-            height: 48px;
+            height: 50px;
+            width: 56px;
             border: none;
             border-radius: 0px !important;
             border-top-left-radius: 10px !important;
@@ -48,7 +50,8 @@
             border-radius: 0px !important;
             border-top-right-radius: 10px !important;
             border-bottom-right-radius: 10px !important;
-            height: 48px;  
+            height: 50px; 
+            width: 97px; 
             margin-left: 0px !important;          
         }
 
@@ -56,22 +59,99 @@
             height: 40px !important;
             width: 40px !important;
             margin-left: 5px;
+            margin-top: 5px;
         }
 
-        
+        #contenedor{
+            width:auto;
+            height:50px;
+        }
+        #contenedor div{
+            float:left;
+            
+        }
 
+        .iconos-nav{
+            
+            font-size: 24px; 
+            color: #5f6368; 
+            margin-top: 9px; 
+            margin-bottom: 9px; 
+            margin-left: 20px;                                        
+        }
+
+        html,body{
+                margin:0px;
+                height:100%;
+            }
+            
+            .lateral{
+                background-color: white;
+                padding-left: 0px;                
+                
+            }
+
+            .correos{
+                background-color: white;
+            }            
+
+            .btn-nuevo{
+                background-color: white;
+                border-color:#c2c4c5;
+                box-shadow: 0 0.5px 1px 0 #c2c4c5, 0 0.5px 1.75px 0.75px #c2c4c5;
+                color: #939598;
+                border-radius: 25px;
+                margin-left: 16px;
+                margin-bottom: 15px;                
+                padding-right: 40px;                
+                padding-bottom: 8px;
+                margin-left: 25px;
+                margin-top: 15px;
+                height: 48px;
+                width: 128px;
+            }
+
+            .btn-opc{
+                background-color:#1875d5;
+                border: none;
+                color: white;
+                border-bottom-right-radius: 25px;
+                border-top-right-radius: 25px;                
+                padding-left: 16px;
+                padding-right: 40px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+            .btn-opc:hover{
+                background-color:#5dbcd2;
+                border: none;
+                color: white;
+                border-bottom-right-radius: 25px;
+                border-top-right-radius: 25px;               
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+
+            }  
+            .icono{
+                margin-right: 10px;
+            }   
     </style>
 </head>
 <body>
     <div class="barra-navegacion container-fluid">
         <div class="row" >
-            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"> 
-                <img class="logo" src="img/logo.png">
-                <a style="color: #5f6368; font-size: 24px; font-weight: bold;">Drive</a>                                           
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="padding-left: 25px;">                
+                <div id="contenedor">
+                    <div><img class="logo" src="img/logo.png"></div>
+                    <div style="margin-top: 8px; margin-left: 8px;"><a style="color: #5f6368; font-size: 24px; font-weight: bold; margin-top: 10px;">Drive</a></div>                                              
+                </div>                
             </div>
-            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7" style="padding-left:0px !important">
-                <div>          
-                    <form class="form-inline my-2 my-lg-0" style="width: 100%; height: 48px;">
+            <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9" style="padding-left:0px !important">
+                <div id="contenedor">          
+                    <div><form class="form-inline my-2 my-lg-0" style="width: 100%; height: 50px; border:none; margin-left: 10px;">
                         <button class="btn-busqueda " type="submit" ><i class="fas fa-search" style=" color:#7b7e82;"></i></button>
                         <input class="busqueda" type="search" placeholder="Busqueda en Drive" >               
                         <div class="dropdown ">
@@ -83,17 +163,29 @@
                               <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-    
-            </div>
+                    </form></div>
+                    <div id="contenedor" style="margin-left: auto; margin-right: auto;" >
+                        <div class="height: 46px !important;"><i class="iconos-nav far fa-question-circle"  ></i></div>
+                        <div class="height: 46px !important;"><i class="iconos-nav fas fa-cog" ></i></div>
+                        <div class="height: 46px !important;"><i class="iconos-nav fas fa-th" ></i></div>
+                        <div class="height: 46px !important;"><img class="iconos-nav" style="border-radius: 16px;" src="img/perfil.jpg"></div>
+                    </div>                    
+                </div>                                  
+            </div>            
+            
+            
         </div>
          
     </div>
-    <div class="col-3">
-
+    <div class=" lateral col-3 " style="height: 100% !important;">        
+        <form>
+            <button type="button" class=" btn-nuevo btn btn-primary" >Nuevo</button>
+            <button type="button" class="btn-opc btn-opc:hover btn btn-primary" onclick="generarRecibidos()"><i class="icono far fa-envelope"></i>Recibidos</button>
+            <button type="button" class="btn-opc btn-opc:hover btn btn-primary"><i class="icono far fa-paper-plane"></i>Enviados</button>
+            <button type="button" class="btn-opc btn-opc:hover btn btn-primary" onclick="generarDestacado()"><i class="icono far fa-star" ></i>Destacados</button>                   
+            <button type="button" class="btn-opc btn-opc:hover btn btn-primary" onclick="generarSpam()"><i class="icono fas fa-exclamation-triangle"></i>Spam</button><br>
+            <button type="button" class="btn-opc btn-opc:hover btn btn-primary"><i class="icono far fa-trash-alt"></i>Papelera</button>
+        </form>
     </div>
     <div class="col-9">
 
