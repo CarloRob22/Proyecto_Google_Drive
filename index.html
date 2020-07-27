@@ -17,7 +17,7 @@
             margin:0px !important;
             padding:8px !important;
             font-family: 'Roboto', sans-serif; 
-            height: 68px;           
+            height: 64px;           
             
         }
         .busqueda{
@@ -58,13 +58,13 @@
         .logo{
             height: 40px !important;
             width: 40px !important;
-            margin-left: 5px;
-            margin-top: 5px;
+            margin-left: 0;
+            margin-top: 4px;
         }
 
         #contenedor{
             width:auto;
-            height:50px;
+            
         }
         #contenedor div{
             float:left;
@@ -82,7 +82,7 @@
 
         html,body{
             margin:0px;
-            height:100%;
+            
         }
         
         .lateral{
@@ -103,18 +103,50 @@
             color: #939598;
             border-radius: 25px;
             margin-left: 16px;
-            margin-bottom: 15px;                
-            padding-right: 40px;                
+            margin-bottom: 8px;                                        
             padding-bottom: 8px;
             margin-left: 25px;
-            margin-top: 15px;
+            margin-top: 10px;
+            height: 48px;
+            width: 128px;
+            text-align: left;
+            
+        }
+        .btn-nuevo:hover{
+            background-color: #f5f5f5;
+            border-color:#c2c4c5;
+            box-shadow: 0 0.5px 1px 0 #c2c4c5, 0 1px 2px 1px #c2c4c5;
+            color: #939598;
+            border-radius: 25px;
+            margin-left: 16px;
+            margin-bottom: 8px;                                        
+            padding-bottom: 8px;
+            margin-left: 25px;
+            margin-top: 10px;
             height: 48px;
             width: 128px;
         }
+        .btn-nuevo:focus{
+            background-color: #f5f5f5;
+            border-color:#c2c4c5;
+            box-shadow: 0 0.5px 1px 0 #c2c4c5, 0 1px 2px 1px #c2c4c5;
+            color: #939598;
+            border-radius: 25px;
+            margin-left: 16px;
+            margin-bottom: 8px;                                        
+            padding-bottom: 8px;
+            margin-left: 25px;
+            margin-top: 10px;
+            height: 48px;
+            width: 128px;
+            outline: none!important;
+        }
+
 
         .btn-opc{
+            font-size: 13px ;
             text-align: left;
-            width: 100%;
+            width: 95%;
             background-color:white;
             border: none;
             color:#5f6368;
@@ -124,10 +156,12 @@
             padding-right: 40px;
             padding-top: 8px;
             padding-bottom: 8px;
+            
         }
 
         .btn-opc:hover{
-            width: 100%;
+            text-align: left;
+            width: 95%;
             background-color:#f5f5f5;
             border: none;
             color: #5f6368;
@@ -140,7 +174,8 @@
         } 
 
         .btn-opc:focus{
-            width: 100%;
+            text-align: left;
+            width: 95%;
             background-color:#e8f0fe;
             border: none !important;
             color: #1967d2;           
@@ -158,6 +193,12 @@
             margin-right: 10px;
             fill: #5f6368 !important;
             margin-left: 5px;
+        }
+
+        .iconos2-nav{
+           margin-top:12px;
+            fill: #5f6368 !important;
+            margin-left: 13px;
         }
         .seleccionado{
             fill:white;          
@@ -182,94 +223,101 @@
             outline: none!important;
             outline-color: #e8f0fe;
              
+        }     
+
+        #opt-lateral{
+            padding:8px;
+            margin-left: 2px; 
+            margin-top: 20px;
+            border-radius: 20px;
+        } 
+
+        #opt-lateral:hover{
+            background-color: #f1f3f4;
         }
-        
     </style>
 </head>
-<body>
-    <div class="barra-navegacion container-fluid">
-        <div class="row" >
-            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="padding-left: 25px;">                
-                <div id="contenedor">
-                    <div><img class="logo" src="img/logo.png"></div>
-                    <div style="margin-top: 8px; margin-left: 8px;"><a style="color: #5f6368; font-size: 24px; font-weight: bold; margin-top: 10px;">Drive</a></div>                                              
-                </div>                
-            </div>
-            <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9" style="padding-left:0px !important">
-                <div id="contenedor">          
-                    <div><form class="form-inline my-2 my-lg-0" style=" width: 100%; height: 50px; border:none; margin-left: 10px;">
-                        <button class="btn-busqueda " type="submit" ><i class="fas fa-search" style=" color:#7b7e82;"></i></button>
-                        <input class="busqueda" type="search" placeholder="Busqueda en Drive" >               
-                        <div class="dropdown ">
-                            <button id="dropdown-nav" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                         
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                    </form></div>
-                    <div id="contenedor" style="margin-left: auto; margin-right: auto;" >
-                        <div class="height: 46px !important;"><i class="iconos-nav far fa-question-circle"  ></i></div>
-                        <div class="height: 46px !important;"><i class="iconos-nav fas fa-cog" ></i></div>
-                        <div class="height: 46px !important;"><i class="iconos-nav fas fa-th" ></i></div>
-                        <div class="height: 46px !important;"><img class="iconos-nav" style="border-radius: 16px;" src="img/perfil.jpg"></div>
-                    </div>                    
-                </div>                                  
-            </div>            
-            
-            
+<body style="height: 100% !important;">
+    <div id="contenedor" class="barra-navegacion ">
+        <div class="" style="width: 18.5%; padding-left: 10px;">                
+            <div id="contenedor">
+                <div><img class="logo" src="img/logo.png"></div>
+                <div style="margin-top: 8px; margin-left: 8px;"><a style="color: #5f6368; font-size: 21.5px; font-weight: bold; margin-top: 10px;">Drive</a></div>                                              
+            </div>                
         </div>
-
-        
-         
-    </div>
-    <div id="container- fluid contenedor" style="height: 100%;">
-        <div class="row" style="height: 100%;">
-            <div class=" lateral col-3 " style="height: 100% !important;">        
-                <form style="padding-bottom:8px; border-bottom:#dadce0 solid 1px;">
-                    <div><button type="button" class=" btn-nuevo btn btn-primary" >Nuevo</button></div>
-                    <button type="button" class="btn-opc btn-opc:hover btn-opc:active" onclick="generarRecibidos()"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H5v-1h14v1zm0-3H5V4h14v13zm-9.35-2h5.83l1.39-2.77h-5.81zm7.22-3.47L13.65 6h-2.9L14 11.53zm-5.26-2.04l-1.45-2.52-3.03 5.51L8.6 15z"></path></svg>Mi Unidad</button><br>
-                    <button type="button" class="btn-opc btn-opc:hover btn-opc:active"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"><path d="M0 0h24v24H0z" fill="none"></path><path xmlns="http://www.w3.org/2000/svg" d="M15 8c0-1.42-.5-2.73-1.33-3.76.42-.14.86-.24 1.33-.24 2.21 0 4 1.79 4 4s-1.79 4-4 4c-.43 0-.84-.09-1.23-.21-.03-.01-.06-.02-.1-.03A5.98 5.98 0 0 0 15 8zm1.66 5.13C18.03 14.06 19 15.32 19 17v3h4v-3c0-2.18-3.58-3.47-6.34-3.87zM9 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m0 9c-2.7 0-5.8 1.29-6 2.01V18h12v-1c-.2-.71-3.3-2-6-2M9 4c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 9c2.67 0 8 1.34 8 4v3H1v-3c0-2.66 5.33-4 8-4z"></path></svg>Compartido conmigo</button><br>
-                    <button type="button" class="btn-opc btn-opc:hover btn-opc:active" onclick="generarDestacado()"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path><path d="M0 0h24v24H0z" fill="none"></path><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></svg>Reciente </button><br>                   
-                    <button type="button" class="btn-opc btn-opc:hover btn-opc:active" onclick="generarSpam()"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" focusable="false" fill="#000000"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path></svg></i>Destacado</button><br>
-                    <button type="button" class="btn-opc btn-opc:hover btn-opc:active"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false" class="undefined "><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 4V3H9v1H4v2h1v13c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6h1V4h-5zm2 15H7V6h10v13z"></path><path d="M9 8h2v9H9zm4 0h2v9h-2z"></path></svg>Papelera</button><br>
-                </form>
-                <div style="padding-top: 8px;">
-                    <button type="button" class="btn-opc btn-opc:hover btn-opc:active"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono a-s-fa-Ha-pa" width="24px" height="24px" viewBox="0 0 24 24" focusable="false" fill="#000000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 20h18v-4H3v4zm2-3h2v2H5v-2zM3 4v4h18V4H3zm4 3H5V5h2v2zm-4 7h18v-4H3v4zm2-3h2v2H5v-2z"></path></svg>Papelera</button><br>    
-                </div>
-            </div>
-            <div class="col-9" style="height: 100% !important;">
-                <div class="container-fluid" style="height: 100% !important;">
-                    <div class="row"style="height: 100% !important;">
-                        <div class="col-11" style="height: 100% !important; padding:0;" >
-                            <div id="contenedor" style="border-bottom: #dadce0 solid 1px; height: 50px; ">
-                                <div class="dropdown">
-                                    <button style="outline: none !important;" class="dropdown-unidad  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     Mi Unidad 
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="#">Action</a>
-                                      <a class="dropdown-item" href="#">Another action</a>
-                                      <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                  </div>
-                                  <div style="margin-top: 8px; margin-left: auto;">
-                                    <svg class="icono a-s-fa-Ha-pa" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000"><path d="M2,5v14h20V5H2z M14,7v4h-4V7H14z M4,7h4v4H4V7z M16,11V7h4v4H16z M4,17v-4h4v4H4z M10,17v-4h4v4H10z M20,17 h-4v-4h4V17z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
-                                  </div>
-                                  <div style="margin-top: 8px; margin-left: auto;">
-                                    <svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path></svg>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="col-1 contenedor" style="height: 100% !important; border-left:#dadce0 solid 1px ;">
-                            
+        <div class="" style="width: 81.5%; padding-left:0px !important;" style="margin-left: 0;">
+            <div id="contenedor">          
+                <div><form class="form-inline my-2 my-lg-0" style=" width: 100%; height: 50px; border:none; margin-left: 0;">
+                    <button class="btn-busqueda " type="submit" ><i class="fas fa-search" style=" color:#7b7e82;"></i></button>
+                    <input class="busqueda" type="search" placeholder="Busqueda en Drive" >               
+                    <div class="dropdown ">
+                        <button id="dropdown-nav" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                         
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-                </div>
+                </form></div>
+                <div id="contenedor" style="padding-left: 225px; height: 100%;" >
+                    <div class="height: 46px !important;"style="padding-left:10px;"><svg class="iconos2-nav wo35tf" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"></path></svg></div>
+                    <div class="height: 46px !important;"><svg class="iconos2-nav a-nEbBXb-c a-s-fa-Ha-pa" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"><path d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z"></path><circle cx="12" cy="12" r="3.5"></circle></svg></div>
+                    <div class="height: 46px !important;" style="padding-left:80px; "><svg style="width:24px" class="iconos2-nav gb_cf" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></div>
+                    <div class="height: 46px !important;" style="padding-left:8px; padding-top:7px;"><img class="" style="border-radius: 16px;" src="img/perfil.jpg"></div>
+                </div>                    
+            </div>                                  
+        </div>           
+    </div>
+    <div id="contenedor" style="height: 100%;">        
+        <div class=" lateral " style="width: 18.5%; height: 100% !important;">        
+            <form style="padding-bottom:8px; border-bottom:#dadce0 solid 1px;">
+                <div><button type="button" class=" btn-nuevo btn "><i style="font-size: 25px; margin-top: 4px; margin-left:7px;color: #ea4335 !important; margin-right: 8px;" class="fas fa-plus"></i> Nuevo</button></div>
+                <button type="button" class="btn-opc btn-opc:hover btn-opc:active" onclick="generarRecibidos()"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H5v-1h14v1zm0-3H5V4h14v13zm-9.35-2h5.83l1.39-2.77h-5.81zm7.22-3.47L13.65 6h-2.9L14 11.53zm-5.26-2.04l-1.45-2.52-3.03 5.51L8.6 15z"></path></svg>Mi Unidad</button><br>
+                <button type="button" class="btn-opc btn-opc:hover btn-opc:active"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"><path d="M0 0h24v24H0z" fill="none"></path><path xmlns="http://www.w3.org/2000/svg" d="M15 8c0-1.42-.5-2.73-1.33-3.76.42-.14.86-.24 1.33-.24 2.21 0 4 1.79 4 4s-1.79 4-4 4c-.43 0-.84-.09-1.23-.21-.03-.01-.06-.02-.1-.03A5.98 5.98 0 0 0 15 8zm1.66 5.13C18.03 14.06 19 15.32 19 17v3h4v-3c0-2.18-3.58-3.47-6.34-3.87zM9 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m0 9c-2.7 0-5.8 1.29-6 2.01V18h12v-1c-.2-.71-3.3-2-6-2M9 4c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 9c2.67 0 8 1.34 8 4v3H1v-3c0-2.66 5.33-4 8-4z"></path></svg>Compartido conmigo</button><br>
+                <button type="button" class="btn-opc btn-opc:hover btn-opc:active" onclick="generarDestacado()"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path><path d="M0 0h24v24H0z" fill="none"></path><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></svg>Reciente </button><br>                   
+                <button type="button" class="btn-opc btn-opc:hover btn-opc:active" onclick="generarSpam()"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" focusable="false" fill="#000000"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path></svg></i>Destacado</button><br>
+                <button type="button" class="btn-opc btn-opc:hover btn-opc:active"><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false" class="undefined "><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 4V3H9v1H4v2h1v13c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6h1V4h-5zm2 15H7V6h10v13z"></path><path d="M9 8h2v9H9zm4 0h2v9h-2z"></path></svg>Papelera</button><br>               
+            </form>
+            <div id="contenedor" style="padding-top: 8px;width:100%;">
+                <button type="button" class="btn-opc btn-opc:hover btn-opc:active" style><svg class="seleccionado a-s-fa-Ha-pa" width="20px" height="20px" viewBox="0 0 20 20" focusable="false" fill="#000000"><polygon points="8,5 13,10 8,15"></polygon></svg><svg class="icono a-s-fa-Ha-pa" width="24px" height="24px" viewBox="0 0 24 24" focusable="false" fill="#000000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 20h18v-4H3v4zm2-3h2v2H5v-2zM3 4v4h18V4H3zm4 3H5V5h2v2zm-4 7h18v-4H3v4zm2-3h2v2H5v-2z"></path></svg>Almacenamiento</button><br>    
             </div>
-        </div>                
+            
+        </div>
+        <div class="container-fluid" id="contenedor" style="height: 100% !important; width: 81.5%; display: flex;">            
+            <div id="contenedor" class="" style="width: 96%!important; height: 400px !important;">                    
+                <div  id="contenedor" style="border-bottom: #dadce0 solid 1px; height: 50px; width: 100%;">                        
+                    <div class="dropdown">
+                        <button style="outline: none !important;" class="dropdown-unidad  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mi Unidad 
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px; margin-left: 80% !important ">
+                        <svg class="icono a-s-fa-Ha-pa" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000"><path d="M2,5v14h20V5H2z M14,7v4h-4V7H14z M4,7h4v4H4V7z M16,11V7h4v4H16z M4,17v-4h4v4H4z M10,17v-4h4v4H10z M20,17 h-4v-4h4V17z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+                    </div>
+                    <div style="margin-top: 10px; margin-left: 11px;">
+                            <svg class="icono" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path></svg>
+                    </div>                                       
+                </div>    
+                <div class="" style="height: 400px; width: 100%;">
+                    <table class="table ">                        
+                        <tbody id="id-archivos">
+                                            
+                        </tbody>
+                    </table> 
+                </div> 
+            </div>
+            <div class="" id="contenedor" style="height: 557px !important; width: 4% !important; border-left:#dadce0 solid 1px; flex-direction: column; ">
+                <div id="opt-lateral"><img src="img/calendario.png"></div>
+                <div id="opt-lateral" ><img src="img/recordatorio.png"></div>
+                <div id="opt-lateral" ><img src="img/anotaciones.png"></div>
+            </div>              
+        </div>         
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
