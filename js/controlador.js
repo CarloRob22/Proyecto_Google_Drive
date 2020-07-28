@@ -59,7 +59,7 @@ if (localStorage.getItem("archivos")==null){
 
 function generarArchivos(){
     document.getElementById("id-archivos").innerHTML = '';
-    for (let i=0;i<archivos.length;i++) {
+    for (let i=0;i<archivos.length;i++) 
         document.getElementById("id-archivos").innerHTML += 
         `<tr>
             <th id="Nombre">${archivos[i].Nombre}</th>
@@ -67,6 +67,6 @@ function generarArchivos(){
             <td id="ultima-modif" >${archivos[i].ultima_modif}</td>
             <td id="tamaño">${archivos[i].tamaño}</td>            
         </tr>`;
-    }   
+    console.log(archivos);
 }
 generarArchivos();

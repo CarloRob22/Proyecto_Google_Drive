@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     
@@ -20,6 +21,6 @@
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-}
+
 
 
