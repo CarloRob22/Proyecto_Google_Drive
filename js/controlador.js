@@ -62,6 +62,7 @@ function generarArchivos(){
     for (let i=0;i<archivos.length;i++) 
         document.getElementById("id-archivos").innerHTML += 
         `<tr>
+            <th id="Nombre">${ValidarArchivo(archivos[i].Nombre)}</th>
             <th id="Nombre">${archivos[i].Nombre}</th>
             <td id="Propietario" >${archivos[i].Propietario}</td>
             <td id="ultima-modif" >${archivos[i].ultima_modif}</td>
@@ -70,3 +71,9 @@ function generarArchivos(){
     console.log(archivos);
 }
 generarArchivos();
+
+validarArchivo(valor){
+    if(valor==true){
+        return '<i class="fas fa-folder"></i>'         
+    }
+}
