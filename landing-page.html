@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ffbb733797.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        html{
+            font-family: arial,sans-serif;
+        }      
+
+        .navbar .navbar-expand-lg .navbar-light{
+            border-bottom: #dadce0 solid 1px;
+        }
+
+        #div-tipos{
+            background-image:url('img/fondo-lp.JPG');
+            height: 600px;
+            width: 100%;
+            background-repeat: no-repeat ;
+            background-size: cover;
+            
+        }
+
+        #div-fotos{            
+            width: auto;
+            background-repeat: no-repeat ;
+            background-size: cover;
+            
+        }
+
+        #titulo-lp{
+            font-size: 60px;
+            color: white;
+            font-family: "open sans",arial,sans-serif !important;          
+            
+        }
+
+        .div-cuentas{           
+            color: #4c4c4c;
+            background-color: white;
+        }
+        .p-cuentas{
+            font-size: 16px;
+            font-weight: 100;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        #contenedor div{
+            float:left;
+            
+        }
+
+        .btn-cuentas{
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            background-color: #4386fc;
+            border: none;
+            padding: 15px;
+            font-size:16px;
+        }
+
+        .a-cuentas{
+            color: white;
+            background-color: #4386fc;
+            height: auto;
+            width: auto;
+            font-size: 18px;
+            padding: 16px 26px 16px 26px;
+            
+        }
+
+        #nav-link{
+            color: #555555;
+            font-size: 18px;
+            display: block;
+            line-height: 30px;
+            padding: 24px 13px;
+
+        }
+
+        
+        #nav-link:hover{
+            color: #555555;
+            font-size: 18px;
+            text-decoration: underline;
+
+        }
+
+        #nav-link-ir{
+            color: white;
+            background-color: #4386fc;
+            display: block;
+            line-height: 30px;
+            padding: 24px 13px;
+        }
+
+        #nav-link-ir:hover{
+            color: white;
+            background-color: #2263d6;
+        }
+
+        
+
+    </style>
+</head>
+<body style="height: 100% !important;">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0px;">
+        <a class="navbar-brand" href="#" style="border-right: 40px !important; padding: 13px 0 13px 20px;"><img src="img/logo-lp.JPG" alt=""></a>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="height: 100%;" >
+          <div class="navbar-nav" style="margin-left:auto !important; margin-right: 5px !important; height: 100%;">
+            <a id="nav-link" class="nav-link" style="vertical-align:middle !important;" href="#">Descubrir Drive</a>
+            <a id="nav-link" class="nav-link" style="vertical-align:middle !important;" href="#">Cómo usar Drive</a>
+            <a id="nav-link" class="nav-link" style="vertical-align:middle !important;" href="#">Descargar</a>
+            <a id="nav-link" class="nav-link" style="vertical-align:middle !important;"  href="#">Para empresas</a>
+            <a id="nav-link" class="nav-link" style="vertical-align:middle !important;"  href="#">Ayuda</a>
+            <a id="nav-link-ir" class="nav-link" style="vertical-align:middle !important;">Ir a Google Drive</a>
+          </div>
+        </div>
+    </nav>
+    <div id="div-tipos">
+        <div align="center" style="width: 900px; margin-right: auto; margin-left: auto; padding-top: 20px; ">
+             <h1 align="center" id="titulo-lp">Todos tus achivos listos, estés donde estés</h1>
+        </div> 
+        <div id="container" style="margin-top: 50px;">            
+            <div class="row" style="padding-left: 150px; padding-right: 150px;" >
+               <div class="col div-cuentas" style="margin-right: 10px; padding:50px">
+                    <h1 align="center">Personal</h1>
+                    <p align="center" class="p-cuentas">Almacena archivos, compártelos y accede a ellos desde cualquier dispositivo. Tus primeros 15 GB de almacenamiento son gratuitos.</p>
+                    <button class="btn-cuentas">Ir a Google Drive</button>
+                </div>
+                <div class="col div-cuentas" style="margin-left: 10px; padding:50px">
+                    <h1 align="center">Empresa</h1>
+                    <p align="center" class="p-cuentas">Con Drive Enterprise, las empresas solo pagan por el almacenamiento que utilizan los empleados. Viene con Documentos de Google, Hojas de cálculo y Presentaciones, y funciona sin problemas con Microsoft Office.</p>
+                    <button  class="btn-cuentas">Mas Información</button>
+                </div>
+            </div>                           
+        </div>
+        <div id="container" style="margin-top: 50px;">            
+            <div class="row" style="padding-left: 150px; padding-right: 150px;" >
+               <div class="col div-cuentas" style="margin-right: 10px; padding:50px">
+                    <img src="img/tipos-archivos.JPG" alt="">
+                </div>
+                <div class="col div-cuentas" style="margin-left: 10px; padding:50px">
+                    <h1 align="left">Guarga cualquier archivo</h1>
+                    <p align="left" style="font-size: 16px;" class="p-cuentas">Guarda fotos, historias, diseños, dibujos, grabaciones, videos y mucho más. Con una cuenta de Google, tus primeros 15 GB de almacenamiento son gratuitos.</p>                    
+                </div>
+            </div>                           
+        </div>
+        <div id="div-fotos" style="background-image:url(img/lp-1.jpg); height: 427px;" ></div>
+        <div id="container" style="margin-top: 50px; margin-bottom: 40px;">            
+            <div class="row" style="padding-left: 50px; padding-right: 100px;" >
+                <div class="col div-cuentas" style="margin-left: 10px; padding-top: 100px !important; padding:30px 30px 30px 10px">
+                    <h1 align="left">Accede a tus archivos en cualquier lugar</h1>
+                    <p align="left" style="font-size: 16px;" class="p-cuentas">Puedes acceder a tus archivos de Drive desde cualquier smartphone, tablet o computadora. Vayas donde vayas, tus archivos te siguen.</p>                    
+                </div>
+                <div class="col div-cuentas" style="margin-right: 10px; padding:0">
+                    <img src="img/lp-2.jpg" alt="">
+                </div>                
+            </div>                           
+        </div>
+        <div id="div-fotos" style="background-image:url(img/lp-3.jpg); height: 431px;" ></div>
+        <div id="container" style="margin-top: 50px;">            
+            <div class="" style="padding-left: 150px; padding-right: 150px;" >
+               <div class="col div-cuentas" style="margin-right: 10px; padding:50px 50px 20x 50px">
+                    <img align="center" src="img/lp-4.JPG" alt="">
+                </div>
+                <div class="col div-cuentas" style="margin-left: 10px; padding:0px 50px 50px 50px">
+                    <h1 align="center">Comparte archivos y carpetas</h1>
+                    <p align="center" class="p-cuentas">Puedes invitar fácilmente a otros usuarios a ver y descargar todos los archivos que quieras, o puedes invitarlos a que trabajen en ellos, sin necesidad de enviar archivos adjuntos por correo electrónico.</p>                    
+                </div>
+            </div>                           
+        </div>
+        <div id="div-fotos" style="background-image:url(img/lp-5.jpg); height:410px;" ></div>
+        <div id="container" style="margin-top: 50px;">            
+            <div class="" style="padding-left: 150px; padding-right: 150px;" >
+               <div class="col div-cuentas" style="margin-right: 10px; padding:50px 50px 20x 50px; height: auto; width: auto;">
+                    <div align="center" style="margin: 20px 0 0 0;"><img  src="img/lp-6.JPG" alt="" style="margin: 0 auto 20px auto;"></div>                    
+                </div>
+                <div class="col div-cuentas" style="margin-left: 10px; padding:0px 50px 50px 50px">
+                    <div align="center" style="margin: 0 0 20px 0;"><h1>Comienza a usar Drive de forma gratuita</h1></div>   
+                    <div align="center" style="margin: 40px 0 20px 0;"><a   class="a-cuentas" style="color: white;">Ir a Google Drive</a></div>                                   
+                </div>
+            </div>                           
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</body>
+</html>
