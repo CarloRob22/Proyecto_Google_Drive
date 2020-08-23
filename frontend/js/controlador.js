@@ -63,7 +63,9 @@ if (localStorage.getItem("archivos")==null){
     localStorage.setItem("archivos",JSON.stringify(archivos));
 }else{
     archivos = JSON.parse(localStorage.getItem('archivos'));
-}
+}*/
+
+
 
 
 function generarArchivos(){
@@ -88,7 +90,7 @@ function ValidarCarpeta(i){
     }else{
         return '<i></i>'
     };
-}*/
+}
 var usuarios = [];
 var usuarioSeleccionado;
 const url = '../../Proyecto_Google_Drive/backend/api/usuarios-personales.php';
@@ -100,7 +102,7 @@ function obtenerUsuariosPersonales(){
 
     }).then(res=>{
         console.log(res.data);
-        this.usuarios = res.data;
+        this.usuarios = res.data;       
         llenarDropdonw();
     }).catch(error=>{
         console.error(error);
@@ -111,37 +113,37 @@ obtenerUsuariosPersonales();
 function llenarDropdonw(){    
     document.getElementById("lista-usuarios-personales").innerHTML= 
     `<div id="encabezado-cuenta" class="dropdown-header" style="width: 100%;">
-        <img id="img-drop-perfil" style="border-radius: 16px;" src="img/perfil.jpg">                              
-        <p align="center" id="nombre-apellido">nombre</p>
-        <h6 align="center" id="nombre-cuenta">nombre usuario</h6>
+        
     </div>
     <div class="divider"></div>`;
     for(let i=0; i<usuarios.length; i++){
+        console.log(i);
         document.getElementById("lista-usuarios-personales").innerHTML+=
         `<div class="dropdown-item">                                    
-            <a class="dropdown-item" href="#" style="padding-left: 0; ">
-                <img class="" style="border-radius: 16px; margin-right: 10px; height:32px; width:32px;; " src="${usuarios[i].foto}">
-                ${usuarios[i].nombre} 
+            <a onclick="seleccionar(${i})" class="dropdown-item" href="#" style="padding-left: 0; ">
+                <img class="" style="border-radius: 16px; margin-right: 10px; height:32px; width:32px;" src="${usuarios[i].foto}">
+                ${usuarios[i].nombre} ${usuarios[i].apellido}
             </a>                                                          
         </div>`;
     }    
+    
 }
 
 function seleccionar(indice){
+    indice=indice+1;
     usuarioSeleccionado = indice;
     axios({
         method: 'GET',
         url: url + `?id=${indice}`,
         responseType:'json',       
-    }).then(res=>{
+    }).then(res=>{        
         console.log(res);  
-        document.getElementById('nombre').value=res.data.nombre;
-        document.getElementById('apellido').value=res.data.apellido;
-        document.getElementById('nombre-usuario').value=res.data.fechaNacimiento;
-        document.getElementById('foto').valu=res.data.pais; 
-        document.getElementById('archivos').style.display='none';
-        
+        document.getElementById('encabezado-cuenta').innerHTML=
+        `<img id="img-drop-perfil" style="border-radius: 16px; height:32px; width:32px;" src="${res.data.foto}">                              
+         <p align="center" id="nombre">${res.data.nombre} ${res.data.apellido}</p>
+         <h6 align="center" id="nombre-usuario">${res.data.nombreUsuario}</h6>`;       
+                
     }).catch(error=>{
         console.error(error);
-    });
+    });    
 }

@@ -240,7 +240,7 @@
                         "nombreUsuario" => $this->nombreUsuario,
                         "contrasena" => $this->contrasena,
                         "foto"=> $this->foto,
-                        "idGrupo"=>$this->foto,
+                        "idGrupo"=>$this->idGrupo,
                         "archivos"=>$this->archivos
                 );
                 $archivo = fopen("../data/usuarios-personal.json","w");

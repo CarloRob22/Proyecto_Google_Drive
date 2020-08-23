@@ -5,7 +5,7 @@
         "apellido": "Duran",
         "nombreUsuario": "pedroduran@gmail.com",
         "contrasena": "mer777",
-        "foto": "img\/perfiles\/pedro.jpg",
+        "foto": "img/perfiles/pedro.jpg",
         "idGrupo": 1,
         "archivos": [
             {
@@ -38,7 +38,7 @@
         "apellido": "Torres",
         "nombreUsuario": "sofiatorres@gmail.com",
         "contrasena": "mer776",
-        "foto": "img\/perfiles\/sofia.PNG",
+        "foto": "img/perfiles/sofia.PNG",
         "idGrupo": 2,
         "archivos": [
             {
@@ -82,7 +82,7 @@
         "apellido": "Martinez",
         "nombreUsuario": "arielmartinez@gmail.com",
         "contrasena": "contrasena1",
-        "foto": "img\/perfiles\/ariel.jpg",
+        "foto": "img/perfiles/ariel.jpg",
         "idGrupo": 1,
         "archivos": [
             {
@@ -115,7 +115,7 @@
         "apellido": "Castro",
         "nombreUsuario": "cristiancastro@gmail.com",
         "contrasena": "perreo2020",
-        "foto": "img\/perfiles\/cristian.jpg",
+        "foto": "img/perfiles/cristian.jpg",
         "idGrupo": 2,
         "archivos": [
             {
@@ -148,7 +148,7 @@
         "apellido": "gonzales",
         "nombreUsuario": "javiergonzales@gmail.com",
         "contrasena": "qwerty",
-        "foto": "img\/perfiles\/javier.jpg",
+        "foto": "img/perfiles/javier.jpg",
         "idGrupo": 1,
         "archivos": [
             {
@@ -191,7 +191,7 @@
         "apellido": "Alfaro",
         "nombreUsuario": "juanalfaro@gmail.com",
         "contrasena": "musica23",
-        "foto": "img\/perfiles\/juana.PNG",
+        "foto": "img/perfiles/juana.PNG",
         "idGrupo": 2,
         "archivos": [
             {
@@ -235,8 +235,8 @@
         "apellido": "Ferrari",
         "nombreUsuario": "genaroferrari@gmail.com",
         "contrasena": "mer777",
-        "foto": "img\/perfiles\/genaro.jpg",
-        "idGrupo": "img\/perfiles\/genaro.jpg",
+        "foto": "img/perfiles/genaro.PNG",
+        "idGrupo": " ",
         "archivos": [
             {
                 "idArchivo": 1,
