@@ -3,7 +3,7 @@
         "idGrupo":"1",
         "nombreGrupo":"Clase Poo",
         "integrantes":[1,2,3],
-        "fotoGrupo":"img/grupo-1",
+        "fotoGrupo":"img/perfiles/grupo-1.PNG",
         "archivos":[
             {
                 "idArchivo":1,
@@ -22,7 +22,7 @@
         "idGrupo":"2",
         "nombreGrupo":"Clase Estadistica",
         "integrantes":[4,5,6],
-        "fotoGrupo":"img/grupo-2",
+        "fotoGrupo":"img/perfiles/grupo-2.jpg",
         "archivos":[
             {
                 "idArchivo":5,
