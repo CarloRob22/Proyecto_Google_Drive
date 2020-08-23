@@ -1,0 +1,52 @@
+[
+    {
+        "idGrupo":"1",
+        "nombreGrupo":"Clase Poo",
+        "integrantes":[1,2,3],
+        "fotoGrupo":"img/grupo-1",
+        "archivos":[
+            {
+                "idArchivo":1,
+                "extension":"pdf",
+                "carpeta":false,
+                "Nombre":"Proyecto_poo_Netflix",
+                "idUsuario":"1",
+                "grupal": true,
+                "idGrupo":1,
+                "ultima_modif":"26 julio 2020",
+                "tamano":"50 MB"
+            }
+        ]        
+    },
+    {
+        "idGrupo":"2",
+        "nombreGrupo":"Clase Estadistica",
+        "integrantes":[4,5,6],
+        "fotoGrupo":"img/grupo-2",
+        "archivos":[
+            {
+                "idArchivo":5,
+                "extension":"",
+                "carpeta":false,
+                "Nombre":"Tarea 4",
+                "idUsuario":"4",
+                "grupal": true,
+                "idGrupo":2,
+                "ultima_modif":"26 julio 2020",
+                "tamano":"564KB"
+            },
+            {
+                "idArchivo":3,
+                "extension":"rar",
+                "carpeta":false,
+                "Nombre":"Tarea 1",
+                "idUsuario":"2",
+                "grupal": true,
+                "idGrupo":2,
+                "ultima_modif":"26 julio 2020",
+                "tamano":"30 MB"
+            }
+            
+        ]   
+    }
+]

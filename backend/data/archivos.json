@@ -1,0 +1,90 @@
+[
+    {
+        "idArchivo":1,
+        "extension":"pdf",
+        "carpeta":false,
+        "Nombre":"Proyecto_poo_Netflix",
+        "idUsuario":"1",
+        "grupal": true,
+        "idGrupo":1,
+        "ultima_modif":"26 julio 2020",
+        "tamaño":"50 MB"
+    },
+    {
+        "idArchivo":2,
+        "extension":"docx",
+        "carpeta":false,
+        "Nombre":"Proyecto_poo_Tik_tok",
+        "idUsuario":"1",
+        "grupal": false,
+        "idGrupo":" ",
+        "ultima_modif":"26 julio 2020",
+        "tamaño":"60 MB"
+    },
+    {
+        "idArchivo":3,
+        "extension":"rar",
+        "carpeta":false,
+        "Nombre":"Tarea 1",
+        "idUsuario":"2",
+        "grupal": true,
+        "idGrupo":2,
+        "ultima_modif":"26 julio 2020",
+        "tamaño":"30 MB"
+    },
+    {
+        "idArchivo":4,
+        "extension":"rar",
+        "carpeta":false,
+        "Nombre":"Tarea 2",
+        "idUsuario":"3",
+        "grupal": false,
+        "idGrupo":" ",
+        "ultima_modif":"26 julio 2020",
+        "tamaño":"74KB"
+    },
+    {
+        "idArchivo":5,
+        "extension":"",
+        "carpeta":false,
+        "Nombre":"Tarea 4",
+        "idUsuario":"4",
+        "grupal": true,
+        "idGrupo":2,
+        "ultima_modif":"26 julio 2020",
+        "tamaño":"564KB"
+    },
+    {
+        "idArchivo":6,
+        "extension":"rar",
+        "carpeta":false,
+        "Nombre":"Proyecto_Algoritmos",
+        "idUsuario":"5",
+        "grupal": false,
+        "idGrupo":" ",
+        "ultima_modif":"02 marzo 2020",
+        "tamaño":"11KB"
+    },
+    {
+        "idArchivo":7,
+        "extension":"docx",
+        "carpeta":true,
+        "Nombre":"Tarea_Ecuaciones",
+        "idUsuario":"6",
+        "grupal": false,
+        "idGrupo":" ",
+        "ultima_modif":"22 noviembre 2019",
+        "tamaño":"24KB"
+    },
+    {
+        "idArchivo":8,
+        "extension":"",
+        "carpeta":true,
+        "Nombre":"Canciones",
+        "idUsuario":"2",
+        "grupal": false,
+        "idGrupo":" ",
+        "ultima_modif":"01 enero 2018",
+        "tamaño":"88KB"
+    }       
+]

@@ -1,4 +1,4 @@
-var localStorage = window.localStorage;
+/*var localStorage = window.localStorage;
 var archivos;
 
 if (localStorage.getItem("archivos")==null){
@@ -65,6 +65,7 @@ if (localStorage.getItem("archivos")==null){
     archivos = JSON.parse(localStorage.getItem('archivos'));
 }
 
+
 function generarArchivos(){
     document.getElementById("id-archivos").innerHTML = '';
     for (let i=0;i<archivos.length;i++) 
@@ -87,4 +88,60 @@ function ValidarCarpeta(i){
     }else{
         return '<i></i>'
     };
+}*/
+var usuarios = [];
+var usuarioSeleccionado;
+const url = '../../Proyecto_Google_Drive/backend/api/usuarios-personales.php';
+function obtenerUsuariosPersonales(){
+    axios({
+        method: 'GET',
+        url: url,
+        responseType:'json',
+
+    }).then(res=>{
+        console.log(res.data);
+        this.usuarios = res.data;
+        llenarDropdonw();
+    }).catch(error=>{
+        console.error(error);
+    });
+}
+obtenerUsuariosPersonales();
+
+function llenarDropdonw(){    
+    document.getElementById("lista-usuarios-personales").innerHTML= 
+    `<div id="encabezado-cuenta" class="dropdown-header" style="width: 100%;">
+        <img id="img-drop-perfil" style="border-radius: 16px;" src="img/perfil.jpg">                              
+        <p align="center" id="nombre-apellido">nombre</p>
+        <h6 align="center" id="nombre-cuenta">nombre usuario</h6>
+    </div>
+    <div class="divider"></div>`;
+    for(let i=0; i<usuarios.length; i++){
+        document.getElementById("lista-usuarios-personales").innerHTML+=
+        `<div class="dropdown-item">                                    
+            <a class="dropdown-item" href="#" style="padding-left: 0; ">
+                <img class="" style="border-radius: 16px; margin-right: 10px; height:32px; width:32px;; " src="${usuarios[i].foto}">
+                ${usuarios[i].nombre} 
+            </a>                                                          
+        </div>`;
+    }    
+}
+
+function seleccionar(indice){
+    usuarioSeleccionado = indice;
+    axios({
+        method: 'GET',
+        url: url + `?id=${indice}`,
+        responseType:'json',       
+    }).then(res=>{
+        console.log(res);  
+        document.getElementById('nombre').value=res.data.nombre;
+        document.getElementById('apellido').value=res.data.apellido;
+        document.getElementById('nombre-usuario').value=res.data.fechaNacimiento;
+        document.getElementById('foto').valu=res.data.pais; 
+        document.getElementById('archivos').style.display='none';
+        
+    }).catch(error=>{
+        console.error(error);
+    });
 }

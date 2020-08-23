@@ -1,0 +1,265 @@
+[
+    {
+        "idUsuario": 1,
+        "nombre": "Pedro",
+        "apellido": "Duran",
+        "nombreUsuario": "pedroduran@gmail.com",
+        "contrasena": "mer777",
+        "foto": "img\/perfiles\/pedro.jpg",
+        "idGrupo": 1,
+        "archivos": [
+            {
+                "idArchivo": 1,
+                "extension": "pdf",
+                "carpeta": false,
+                "Nombre": "Proyecto_poo_Netflix",
+                "idUsuario": "1",
+                "grupal": true,
+                "idGrupo": 1,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "50 MB"
+            },
+            {
+                "idArchivo": 2,
+                "extension": "docx",
+                "carpeta": false,
+                "Nombre": "Proyecto_poo_Tik_tok",
+                "idUsuario": "1",
+                "grupal": false,
+                "idGrupo": " ",
+                "ultima_modif": "26 julio 2020",
+                "tamano": "60 MB"
+            }
+        ]
+    },
+    {
+        "idUsuario": 2,
+        "nombre": "Sofia",
+        "apellido": "Torres",
+        "nombreUsuario": "sofiatorres@gmail.com",
+        "contrasena": "mer776",
+        "foto": "img\/perfiles\/sofia.PNG",
+        "idGrupo": 2,
+        "archivos": [
+            {
+                "idArchivo": 1,
+                "extension": "pdf",
+                "carpeta": false,
+                "Nombre": "Proyecto_poo_Netflix",
+                "idUsuario": "1",
+                "grupal": true,
+                "idGrupo": 1,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "50 MB"
+            },
+            {
+                "idArchivo": 3,
+                "extension": "rar",
+                "carpeta": false,
+                "Nombre": "Tarea 1",
+                "idUsuario": "2",
+                "grupal": true,
+                "idGrupo": 2,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "30 MB"
+            },
+            {
+                "idArchivo": 8,
+                "extension": "",
+                "carpeta": true,
+                "Nombre": "Canciones",
+                "idUsuario": "2",
+                "grupal": false,
+                "idGrupo": " ",
+                "ultima_modif": "01 enero 2018",
+                "tamano": "88KB"
+            }
+        ]
+    },
+    {
+        "idUsuario": 3,
+        "nombre": "Ariel",
+        "apellido": "Martinez",
+        "nombreUsuario": "arielmartinez@gmail.com",
+        "contrasena": "contrasena1",
+        "foto": "img\/perfiles\/ariel.jpg",
+        "idGrupo": 1,
+        "archivos": [
+            {
+                "idArchivo": 1,
+                "extension": "pdf",
+                "carpeta": false,
+                "Nombre": "Proyecto_poo_Netflix",
+                "idUsuario": "1",
+                "grupal": true,
+                "idGrupo": 1,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "50 MB"
+            },
+            {
+                "idArchivo": 4,
+                "extension": "rar",
+                "carpeta": false,
+                "Nombre": "Tarea 2",
+                "idUsuario": "3",
+                "grupal": false,
+                "idGrupo": " ",
+                "ultima_modif": "26 julio 2020",
+                "tamano": "74KB"
+            }
+        ]
+    },
+    {
+        "idUsuario": 4,
+        "nombre": "Cristian",
+        "apellido": "Castro",
+        "nombreUsuario": "cristiancastro@gmail.com",
+        "contrasena": "perreo2020",
+        "foto": "img\/perfiles\/cristian.jpg",
+        "idGrupo": 2,
+        "archivos": [
+            {
+                "idArchivo": 5,
+                "extension": "",
+                "carpeta": false,
+                "Nombre": "Tarea 4",
+                "idUsuario": "4",
+                "grupal": true,
+                "idGrupo": 2,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "564KB"
+            },
+            {
+                "idArchivo": 3,
+                "extension": "rar",
+                "carpeta": false,
+                "Nombre": "Tarea 1",
+                "idUsuario": "2",
+                "grupal": true,
+                "idGrupo": 2,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "30 MB"
+            }
+        ]
+    },
+    {
+        "idUsuario": 5,
+        "nombre": "javier",
+        "apellido": "gonzales",
+        "nombreUsuario": "javiergonzales@gmail.com",
+        "contrasena": "qwerty",
+        "foto": "img\/perfiles\/javier.jpg",
+        "idGrupo": 1,
+        "archivos": [
+            {
+                "idArchivo": 6,
+                "extension": "rar",
+                "carpeta": false,
+                "Nombre": "Proyecto_Algoritmos",
+                "idUsuario": "5",
+                "grupal": false,
+                "idGrupo": " ",
+                "ultima_modif": "02 marzo 2020"
+            },
+            {
+                "idArchivo": 5,
+                "extension": "",
+                "carpeta": false,
+                "Nombre": "Tarea 4",
+                "idUsuario": "4",
+                "grupal": true,
+                "idGrupo": 2,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "564KB"
+            },
+            {
+                "idArchivo": 3,
+                "extension": "rar",
+                "carpeta": false,
+                "Nombre": "Tarea 1",
+                "idUsuario": "2",
+                "grupal": true,
+                "idGrupo": 2,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "30 MB"
+            }
+        ]
+    },
+    {
+        "idUsuario": 6,
+        "nombre": "Juana",
+        "apellido": "Alfaro",
+        "nombreUsuario": "juanalfaro@gmail.com",
+        "contrasena": "musica23",
+        "foto": "img\/perfiles\/juana.PNG",
+        "idGrupo": 2,
+        "archivos": [
+            {
+                "idArchivo": 7,
+                "extension": "docx",
+                "carpeta": true,
+                "Nombre": "Tarea_Ecuaciones",
+                "idUsuario": "6",
+                "grupal": false,
+                "idGrupo": " ",
+                "ultima_modif": "22 noviembre 2019",
+                "tamano": "24KB"
+            },
+            {
+                "idArchivo": 5,
+                "extension": "",
+                "carpeta": false,
+                "Nombre": "Tarea 4",
+                "idUsuario": "4",
+                "grupal": true,
+                "idGrupo": 2,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "564KB"
+            },
+            {
+                "idArchivo": 3,
+                "extension": "rar",
+                "carpeta": false,
+                "Nombre": "Tarea 1",
+                "idUsuario": "2",
+                "grupal": true,
+                "idGrupo": 2,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "30 MB"
+            }
+        ]
+    },
+    {
+        "idUsuario": 7,
+        "nombre": "Genaro",
+        "apellido": "Ferrari",
+        "nombreUsuario": "genaroferrari@gmail.com",
+        "contrasena": "mer777",
+        "foto": "img\/perfiles\/genaro.jpg",
+        "idGrupo": "img\/perfiles\/genaro.jpg",
+        "archivos": [
+            {
+                "idArchivo": 1,
+                "extension": "pdf",
+                "carpeta": false,
+                "Nombre": "carta de amor",
+                "idUsuario": "7",
+                "grupal": true,
+                "idGrupo": 7,
+                "ultima_modif": "26 julio 2020",
+                "tamano": "50 MB"
+            },
+            {
+                "idArchivo": 7,
+                "extension": "docx",
+                "carpeta": false,
+                "Nombre": "tarea redaccion",
+                "idUsuario": "7",
+                "grupal": false,
+                "idGrupo": " ",
+                "ultima_modif": "26 julio 2020",
+                "tamano": "60 MB"
+            }
+        ]
+    }
+]

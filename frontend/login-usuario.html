@@ -137,30 +137,36 @@
     </style>
 </head>
 <body>
-    <div id="id-form-p">
-        <div id="id-form-h">
-            <div style="text-align: center;"><img src="img/logo-login.jpg" alt=""></div>
-            <p id="id-acceder">Acceder</p>
-            <p id="id-ira">Ir a Google Drive</p>
-            <input class="in-correo" type="text" placeholder="Correo Electronico">            
-            <a href="" >¿Olvidaste el Correo electronico?</a>
-           <div style="margin-top: 10%; color: #5f6368; font-size: 15px; ">¿Esta no es tu computadora? Usa el modo de invitado para navegar de forma privada.<a href="">Más información</a></div>             
-           <div style="margin-top: 10%; margin-right: auto; " class="row">           
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownCrearCuenta" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Crear Cuenta
-                    </a>                  
-                    <div class="dropdown-menu" aria-labelledby="dropdownCrearCuenta">
-                        <a class="dropdown-item" href="./registro-usuario.html">Para mi</a>
-                        <a class="dropdown-item" href="#">Para administrar mi negocio</a>                      
-                     </div>
-                </div>
-                <button class="btn-sig">Siguiente</button>
-           </div>
-        </div>
+    <div id="id-form-p" class="container">
+        <div  class="row">
+            <div id="id-form-h" class="col-9 col-sm-10 col-md-11 col-lg-12 col-xl-12">
+                <div style="text-align: center;"><img src="img/logo-login.jpg" alt=""></div>
+                <p id="id-acceder">Acceder</p>
+                <p id="id-ira">Ir a Google Drive</p>       
+                <form>
+                    <div class="form-group">                        
+                        <input class="in-correo"  type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Correo Electronico">
+                        <a href="" >¿Olvidaste el Correo electronico?</a>
+                        <div style="margin-top: 10%; color: #5f6368; font-size: 15px; ">¿Esta no es tu computadora? Usa el modo de invitado para navegar de forma privada.<a href="">Más información</a></div>
+                    </div>
+                    <div class="form-group" >       
+                        <div class="row" style="margin: 0;">
+                            <div class="dropdown" >
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownCrearCuenta" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Crear Cuenta
+                                </a>                  
+                                <div class="dropdown-menu" aria-labelledby="dropdownCrearCuenta">
+                                    <a class="dropdown-item" href="./registro-usuario.html">Para mi</a>
+                                    <a class="dropdown-item" href="#">Para administrar mi negocio</a>                      
+                                 </div>
+                            </div>
+                            <button class="btn-sig">Siguiente</button>
+                        </div>                            
+                   </div>
+                </form>
+            </div>            
+        </div>        
     </div>
-    
-    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
